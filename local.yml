@@ -1,0 +1,10 @@
+---
+- hosts: all
+
+  tasks:
+  - name: install example application
+    copy: 
+      src: ansible_test_app 
+      dest: /tmp/
+      owner: root
+      group: root
